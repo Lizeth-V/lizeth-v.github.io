@@ -1,0 +1,52 @@
+
+body {
+    background-color: #f8f3ec;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    font-size: 104px;
+}
+h2 {
+    color: black;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 42px;
+}
+h3 {
+    color: black;
+    font-family: 'Quicksand';
+    font-size: 28px;
+}
+
+p {
+    color: black;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: lighter;
+
+}
+nav {
+    height: 54px;
+    width: auto;
+    background-color: #466ec3;
+    padding-top: 0%;
+}
+/* div{
+    border: 1px dashed black;
+} */
+
+.landing {
+    align-items: center;
+    
+}
+
+.intro{
+    text-align: center;
+    padding: 5%;
+}
