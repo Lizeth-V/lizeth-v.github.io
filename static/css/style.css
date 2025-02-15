@@ -1,64 +1,73 @@
 
 body {
-    background-color: #f8f3ec;
+    background-color: #0b1956;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: black;
+    color: #00011e;
     font-family: 'Quicksand';
     font-weight: bolder;
     font-size: 104px;
 }
 h2 {
-    color: black;
+    color: #00011e;
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 42px;
 }
 h3 {
-    color: black;
+    color: #00011e;
     font-family: 'Quicksand';
     font-size: 28px;
 }
 
 p {
-    color: black;
+    color: #00011e;
     font-family: 'Inter';
     font-size: 22px;
     font-weight: lighter;
 
 }
+
 nav {
     height: 54px;
     width: auto;
     background-color: #466ec3;
     padding-top: 0%;
 }
-/* div{
-    border: 1px dashed black;
-} */
-
+/* Section: Landing Page */
 .landing {
     align-items: center;
+    background-color: #f8f3ec;
     
 }
-
 .intro{
     text-align: center;
     padding: 5%;
 }
-.about div{
+/* Section: Projects */
+.projects{
     height: auto;
+    background-color: #f8f3ec;
+
 }
+/* Section: About Me */
+.about{
+    height: auto;
+    border-bottom-right-radius: 64px;
+    border-bottom-left-radius: 64px;
+    background-color: #f8f3ec;
+}
+
 .about_text{
     background-color: #dbd6fa;
     border-radius: 12px;
     align-self: flex-start;
     width: 635px;
-    height: 520px;
+    height: auto;
     padding: 47px;
     box-shadow: 0px 4px 4px #c5c1e1;
 }
@@ -68,7 +77,7 @@ nav {
     border-radius: 12px;
     align-self: flex-end;
     width: 589px;
-    height: 520px;
+    height: auto;
     padding: 47px;
     box-shadow: 0px 4px 4px #c5c1e1;
 }
@@ -82,4 +91,31 @@ nav {
 .text_row{
     display: flex;
     gap: 10px;
+}
+
+/* Section: Footer */
+footer {
+    /* background-color: #0b1956; */
+    padding-top: 0%;
+    margin: 0;
+}
+
+footer p{
+    color: #f8f3ec;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: lighter;
+}
+footer h2{
+    color: #f8f3ec;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 42px;
+    margin: 0;
+}
+
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
 }
