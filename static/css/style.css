@@ -97,7 +97,7 @@ nav {
 footer {
     /* background-color: #0b1956; */
     padding-top: 0%;
-    margin: 0;
+    margin-top: 32px;
 }
 
 footer p{
@@ -106,6 +106,7 @@ footer p{
     font-size: 20px;
     font-weight: lighter;
 }
+
 footer h2{
     color: #f8f3ec;
     font-family: 'Quicksand';
@@ -118,4 +119,38 @@ footer h2{
     display: flex;
     justify-content: space-between;
     padding: 32px;
+    
+}
+.footer_icons{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a:link, a:visited{
+    text-decoration: none;
+    color:#f8f3ec;
+}
+
+footer a:hover, a:active{
+    color: #466ec3;
+}
+
+.send_email_button {
+    border: none;
+    border-radius: 29px;
+    background-color: #dbd6fa;
+    color:#00011e;
+    font-size: 22px;
+    padding: 15px 16px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    transition-duration: 0.5s;
+}
+
+.send_email_button:hover{
+    background-color: #466ec3;
+    color:#dbd6fa;
+
 }
