@@ -51,15 +51,43 @@ nav {
 /* Section: Projects */
 .projects{
     height: auto;
+    border-top: 16px;
+    border-bottom: 16px;
     background-color: #f8f3ec;
-
+    padding: 40px 0px 40px 0px;
 }
+
+.project_grid{
+    display: flex;
+    padding: 32px;
+    justify-content: space-around;
+}
+
+
+.project_photo{
+    background-color: white;
+    border-radius: 12px;
+    width: 450px;
+    height: 600px;
+}
+.project_card p{
+    margin-bottom: 16px;
+}
+
+p.keywords{
+    color: #666778;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: lighter;
+}
+
 /* Section: About Me */
 .about{
     height: auto;
     border-bottom-right-radius: 64px;
     border-bottom-left-radius: 64px;
     background-color: #f8f3ec;
+    padding: 90px 0px 90px 0px;
 }
 
 .about_text{
