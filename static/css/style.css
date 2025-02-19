@@ -37,9 +37,14 @@ p {
 /* Nav Bar */
 nav {
     height: 54px;
-    width: auto;
-    background-color: #466ec3;
+    width: 100%;
+    background: rgb(70,110,195);
+    background: linear-gradient(90deg, rgba(70,110,195,1) 0%, rgba(11,25,86,1) 100%);
     padding-top: 0%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
 }
 .nav_bar{
     display: flex;
@@ -74,7 +79,7 @@ nav a:hover, nav a:active{
 }
 .intro{
     text-align: center;
-    padding: 5%;
+    padding: 10%;
 }
 
 /* Section: Projects */
@@ -87,7 +92,10 @@ nav a:hover, nav a:active{
 }
 
 .project_grid{
-    display: flex;
+    display: grid;
+    column-gap: 25px;
+    row-gap: 124px;
+    grid-template-columns: auto auto auto;
     padding: 32px;
     justify-content: space-around;
 }
@@ -98,8 +106,8 @@ nav a:hover, nav a:active{
     border-radius: 12px;
     width: 450px;
     height: 600px;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .project_photo img {
@@ -113,12 +121,37 @@ nav a:hover, nav a:active{
     margin-bottom: 16px;
 }
 
+
+.project_photo .star {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; 
+    color: #0b1956; 
+}
+
+/* Stars when hovering effect */
+.project_photo .top-left { top: 5px; left: 5px; }
+.project_photo .bottom-right { bottom: 5px; right: 5px; }
+
+.project_card:hover .project_photo .star {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project_card:hover p{
+    color: #466ec3;
+}
+
 p.keywords{
     color: #666778;
     font-family: 'Inter';
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: normal;
 }
+
+
 
 /* Section: About Me */
 .about{
