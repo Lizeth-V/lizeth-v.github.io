@@ -100,6 +100,10 @@ nav a:hover, nav a:active{
     justify-content: space-around;
 }
 
+.project_grid a:link, .project_grid a:visited{
+    text-decoration: none;
+}
+
 
 .project_photo{
     background-color: white;
