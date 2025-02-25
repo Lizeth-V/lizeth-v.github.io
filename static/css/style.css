@@ -13,7 +13,7 @@ h1 {
     color: #00011e;
     font-family: 'Quicksand';
     font-weight: bolder;
-    font-size: 104px;
+    font-size: 8vw;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
 h3 {
     color: #00011e;
     font-family: 'Quicksand';
-    font-size: 28px;
+    font-size: 2vw;
 }
 
 p {
@@ -95,7 +95,7 @@ nav a:hover, nav a:active{
     display: grid;
     column-gap: 25px;
     row-gap: 124px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     padding: 32px;
     justify-content: space-around;
 }
@@ -104,12 +104,19 @@ nav a:hover, nav a:active{
     text-decoration: none;
 }
 
+.project_card{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
 
 .project_photo{
     background-color: white;
     border-radius: 12px;
-    width: 450px;
-    height: 600px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 3 / 4;
     overflow: hidden;
     position: relative;
     box-shadow: 0px 4px 4px #c6c2bd;
@@ -120,6 +127,25 @@ nav a:hover, nav a:active{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* Responsive Breakpoints - Projects */
+@media (max-width: 1024px) {
+    .project_grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project_photo {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project_grid {
+        grid-template-columns: 1fr;
+    }
+    .project_photo {
+        max-width: 90%;
+    }
 }
 
 .project_card p{
@@ -171,8 +197,9 @@ p.keywords{
     background-color: #dbd6fa;
     border-radius: 12px;
     align-self: flex-start;
-    width: 635px;
-    height: auto;
+    width: 50%;
+    max-width: 635px;
+    min-width: 200px;
     padding: 47px;
     box-shadow: 0px 4px 4px #c5c1e1;
 }
@@ -181,7 +208,9 @@ p.keywords{
     background-color: #dbd6fa;
     border-radius: 12px;
     align-self: flex-end;
-    width: 589px;
+    width: 50%;
+    max-width: 589px;
+    min-width: 200px;
     height: auto;
     padding: 47px;
     box-shadow: 0px 4px 4px #c5c1e1;
@@ -190,17 +219,20 @@ p.keywords{
 .about_row{
     display: flex;
     padding: 32px;
-    justify-content: space-between;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 32px; 
+    align-items: center; 
 }
 
 .text_row{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 /* Section: Footer */
 footer {
-    /* background-color: #0b1956; */
     padding-top: 0%;
     margin-top: 32px;
 }
@@ -224,7 +256,26 @@ footer h2{
     display: flex;
     justify-content: space-between;
     padding: 32px;
-    
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;   
+}
+
+
+.contact_me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+}
+
+.copyright {
+    text-align: flex-start;
+    width: 75%;
+}
+.resume{
+    align-items: flex-end;
+    margin-top: 25px;
 }
 .footer_icons{
     font-size: 40px;
@@ -232,7 +283,7 @@ footer h2{
     justify-content: space-between;
     margin: 20px 0px 20px 0px;
 }
-.resume{
+.resume_text{
     font-size: 20px;
 }
 
@@ -264,4 +315,24 @@ footer a:hover, footer a:active{
     background-color: #466ec3;
     color:#dbd6fa;
 
+}
+
+/* Mobile View Footer */
+@media (max-width: 700px) {
+    .footer_row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact_me {
+        order: 1;
+    }
+
+    .resume {
+        order: 2;
+    }
+
+    .copyright {
+        order: 3;
+    }
 }
