@@ -18,6 +18,7 @@
 .project_display_row{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     height: auto;
 }
 /* Project Images */
@@ -91,4 +92,24 @@
 
 .project_description a:hover, .project_description a:active{
     color: #466ec3;
+}
+
+/* Mobile/Tablet Responsive */
+
+@media (max-width: 768px) {
+    .project_display_row {
+        flex-direction: column;
+    }
+
+    .project_description {
+        order: -1;
+        width: 100%;
+        padding: 20px 16px;
+        position: static;
+        max-height: none;
+    }
+
+    .project_images {
+        width: 100%;
+    }
 }

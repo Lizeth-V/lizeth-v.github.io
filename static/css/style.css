@@ -318,7 +318,7 @@ footer a:hover, footer a:active{
 }
 
 /* Mobile View Footer */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .footer_row {
         flex-direction: column;
         gap: 10px;
