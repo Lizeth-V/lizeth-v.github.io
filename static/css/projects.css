@@ -95,6 +95,11 @@
 }
 
 /* Mobile/Tablet Responsive */
+@media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  }
 
 @media (max-width: 768px) {
     .project_display_row {
@@ -107,6 +112,7 @@
         padding: 20px 16px;
         position: static;
         max-height: none;
+        align-self: center;
     }
 
     .project_images {
