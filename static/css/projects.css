@@ -9,8 +9,8 @@
 /* Project Display */
 .project_display{
     height: auto;
-    border-bottom-right-radius: 64px;
-    border-bottom-left-radius: 64px;
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
     background-color: #f8f3ec;
     padding: 30px 32px 200px 32px;
 }

@@ -168,8 +168,8 @@ p.keywords{
 /* Section: About Me */
 .about{
     height: auto;
-    border-bottom-right-radius: 64px;
-    border-bottom-left-radius: 64px;
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
     background-color: #f8f3ec;
     padding: 90px 0px 90px 0px;
 }
