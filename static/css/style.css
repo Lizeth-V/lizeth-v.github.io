@@ -13,7 +13,7 @@ h1 {
     color: #00011e;
     font-family: 'Quicksand';
     font-weight: bolder;
-    font-size: clamp(48px, 8vw, 104px);
+    font-size: clamp(48px, 9vw, 104px);
 }
 
 h2 {
@@ -92,6 +92,9 @@ nav a:hover, nav a:active{
 }
 
 .project_grid{
+    max-width: 1500px; 
+    margin: 0 auto;
+    /*  */
     display: grid;
     column-gap: 25px;
     row-gap: 124px;
@@ -310,6 +313,12 @@ footer a:hover, footer a:active{
 }
 
 @media (max-width: 768px) {
+    .intro{
+        padding: 80px 32px 80px 32px;
+    }
+    .project_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .about_text{
         width: 100%;
     }
