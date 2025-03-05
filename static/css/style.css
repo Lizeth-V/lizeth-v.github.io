@@ -1,35 +1,46 @@
+/* colors */
+:root {
+    --primary-color: #0b1956;
+    --secondary-color: #466ec3;
+    --background-color: #f8f3ec;
+    --text-color: #00011e;
+    --accent-color: #dbd6fa;
+    --accent-shadow: #c5c1e1;
+    --project-keywords: #666778;
+    --project-box-shadow-color: #c6c2bd;
+  }
 html{
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0b1956;
+    background-color: var(--primary-color);
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #00011e;
+    color: var(--text-color);
     font-family: 'Quicksand';
     font-weight: bolder;
     font-size: clamp(48px, 9vw, 104px);
 }
 
 h2 {
-    color: #00011e;
+    color: var(--text-color);
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: clamp(30px, 5vw, 42px);
 }
 h3 {
-    color: #00011e;
+    color: var(--text-color);
     font-family: 'Quicksand';
     font-size: clamp(22px, 3vw, 28px);
 }
 
 p {
-    color: #00011e;
+    color: var(--text-color);
     font-family: 'Inter';
     font-size: clamp(18px, 2vw, 22px);
     font-weight: normal;
@@ -62,19 +73,19 @@ nav a{
 }
 
 nav a:link, nav a:visited{
-    color: #dbd6fa;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
 nav a:hover, nav a:active{
-    color: #c5c1e1;
+    color: var(--accent-shadow);
 }
 
 
 /* Section: Landing Page */
 .landing {
     align-items: center;
-    background-color: #f8f3ec;
+    background-color: var(--background-color);
     
 }
 .intro{
@@ -87,7 +98,7 @@ nav a:hover, nav a:active{
     height: auto;
     border-top: 16px;
     border-bottom: 16px;
-    background-color: #f8f3ec;
+    background-color: var(--background-color);
     padding: 40px 0px 40px 0px;
 }
 
@@ -122,7 +133,7 @@ nav a:hover, nav a:active{
     aspect-ratio: 3 / 4;
     overflow: hidden;
     position: relative;
-    box-shadow: 0px 4px 4px #c6c2bd;
+    box-shadow: 0px 4px 4px var(--project-box-shadow-color);
 }
 
 .project_photo img {
@@ -143,7 +154,7 @@ nav a:hover, nav a:active{
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none; 
-    color: #0b1956; 
+    color: var(--primary-color); 
 }
 
 /* Stars when hovering effect */
@@ -156,11 +167,11 @@ nav a:hover, nav a:active{
 }
 
 .project_card:hover p{
-    color: #466ec3;
+    color: var(--secondary-color);
 }
 
 p.keywords{
-    color: #666778;
+    color: var(--project-keywords);
     font-family: 'Inter';
     font-size: 16px;
     font-weight: normal;
@@ -173,23 +184,23 @@ p.keywords{
     height: auto;
     border-bottom-right-radius: 5vw;
     border-bottom-left-radius: 5vw;
-    background-color: #f8f3ec;
+    background-color: var(--background-color);
     padding: 90px 0px 90px 0px;
 }
 
 .about_text{
-    background-color: #dbd6fa;
+    background-color: var(--accent-color);
     border-radius: 12px;
     align-self: flex-start;
     width: 50%;
     max-width: 635px;
     min-width: 200px;
     padding: clamp(20px, 5vw, 47px);
-    box-shadow: 0px 4px 4px #c5c1e1;
+    box-shadow: 0px 4px 4px var(--accent-shadow);
 }
 
 .about_me_pic{
-    background-color: #dbd6fa;
+    background-color: var(--accent-color);
     border-radius: 12px;
     align-self: flex-end;
     width: 50%;
@@ -197,7 +208,7 @@ p.keywords{
     min-width: 200px;
     height: auto;
     padding: clamp(20px, 5vw, 47px);
-    box-shadow: 0px 4px 4px #c5c1e1;
+    box-shadow: 0px 4px 4px var(--accent-shadow);
 }
 
 .about_row{
@@ -222,14 +233,14 @@ footer {
 }
 
 footer p{
-    color: #f8f3ec;
+    color: var(--background-color);
     font-family: 'Inter';
     font-size: 20px;
     font-weight: normal;
 }
 
 footer h2{
-    color: #f8f3ec;
+    color: var(--background-color);
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 42px;
@@ -274,19 +285,19 @@ footer h2{
 
 footer a:link, footer a:visited{
     text-decoration: none;
-    color:#f8f3ec;
+    color:var(--background-color);
     font-family: 'Inter';
 }
 
 footer a:hover, footer a:active{
-    color: #466ec3;
+    color: var(--secondary-color);
 }
 
 .send_email_button {
     border: none;
     border-radius: 29px;
-    background-color: #dbd6fa;
-    color:#00011e;
+    background-color: var(--accent-color);
+    color: var(--text-color);
     font-size: 22px;
     padding: 15px 16px;
     text-align: center;
@@ -296,8 +307,8 @@ footer a:hover, footer a:active{
 }
 
 .send_email_button:hover{
-    background-color: #466ec3;
-    color:#dbd6fa;
+    background-color: var(--secondary-color);
+    color:var(--accent-color);
 
 }
 
