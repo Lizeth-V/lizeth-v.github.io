@@ -1,6 +1,6 @@
 /* Project Title Section */
 .project_landing{
-    background-color: #f8f3ec;
+    background-color: var(--cream-white);
 }
 
 .project_title{
@@ -11,7 +11,7 @@
     height: auto;
     border-bottom-right-radius: 5vw;
     border-bottom-left-radius: 5vw;
-    background-color: #f8f3ec;
+    background-color: var(--cream-white);
     padding: 30px 32px 200px 32px;
 }
 
@@ -61,7 +61,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
-    box-shadow: 0px 4px 4px #c6c2bd;
 }
 
 /* Project Description */
@@ -84,14 +83,14 @@
 
 .project_description a:link, .project_description a:visited{
     text-decoration: none;
-    color:#00011e;
+    color:var(--light-text-color);
     font-family: 'Inter';
     font-size: 22px;
     font-weight: normal;
 }
 
 .project_description a:hover, .project_description a:active{
-    color: #466ec3;
+    color: var(--secondary-color);
 }
 
 /* Mobile/Tablet Responsive */
