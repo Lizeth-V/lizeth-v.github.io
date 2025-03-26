@@ -354,6 +354,69 @@ p.keywords{
     height: 100%;
 }
 
+/* Section: Personal Adventures */
+.personal_adventures{
+    height: auto;
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    background-color: var(--cream-white);
+    padding: 90px 42px; 
+    
+}
+
+.pa_row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: auto;
+    max-width: 1500px;
+}
+/* Project Images */
+.pa_images{
+    width: 100%;
+    max-height: 870px;
+    height: 870px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 24px 24px; 
+    grid-template-areas: 
+        "img1 img2 img2"
+        "img3 img3 img4";
+}
+
+.pa_images > div{
+    border-radius: 12px;
+    border: 2px solid var(--deep-purple);
+    height: 100%;
+    overflow: hidden;
+}
+
+.pa_img1 { 
+    grid-area: img1;
+}
+.pa_img2 { 
+    grid-area: img2; 
+}
+.pa_img3 { 
+    grid-area: img3; 
+}
+.pa_img4 { 
+    grid-area: img4; 
+}
+
+.pa_img1 img,
+.pa_img2 img,
+.pa_img3 img,
+.pa_img4 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
 /* Section: Footer */
 footer {
     padding-top: 0%;
