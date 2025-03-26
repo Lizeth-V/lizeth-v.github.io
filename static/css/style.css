@@ -112,8 +112,6 @@ nav a:hover, nav a:active{
 /* Section: Projects */
 .projects{
     height: auto;
-    border-top: 16px;
-    border-bottom: 16px;
     background-color: var(--cream-white);
     padding: 40px 0px 40px 0px;
 }
@@ -200,10 +198,8 @@ p.keywords{
 /* Section: About Me */
 .about{
     height: auto;
-    border-bottom-right-radius: 5vw;
-    border-bottom-left-radius: 5vw;
     background-color: var(--cream-white);
-    padding: 90px 0px 90px 0px;  
+     
 }
 .about h2{
     margin-bottom: 55px;
@@ -314,6 +310,48 @@ p.keywords{
 .text_col2 {
     flex: 1; /* Expands to fill remaining space */
     text-align: left; /* Ensures text starts at the same point */
+}
+
+/* Section: ToolKit */
+.toolkit{
+    height: auto;
+    background-color: var(--cream-white);
+    padding: 42px 42px;
+    justify-content: center;
+
+}
+.title{
+    justify-content: center;
+    padding: 0;
+}
+.toolkit_row{
+    position: relative;
+}
+
+.carousel{
+    background-color: var(--cream-white);
+    border-radius: 12px;
+    border: 2px solid var(--deep-purple);
+    max-width: 1410px;
+    min-width: 200px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    padding: 60px 42px;
+}
+.accent_box{
+    position: absolute;
+    background-color: var(--bright-purple);
+    border-radius: 12px;
+    border: 2px solid var(--deep-purple);
+    z-index: 1;
+    box-sizing: border-box;
+}
+.bottom{
+    top: 15px; 
+    left: 15px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Section: Footer */
