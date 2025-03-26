@@ -203,35 +203,86 @@ p.keywords{
     border-bottom-right-radius: 5vw;
     border-bottom-left-radius: 5vw;
     background-color: var(--cream-white);
-    padding: 90px 0px 90px 0px;
+    padding: 90px 0px 90px 0px;  
+}
+.about h2{
+    margin-bottom: 55px;
+}
+.about p{
+    margin: 25px 0px
+}
+
+.about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    min-height: 986px;
+    height: auto;
+    margin: 0 auto;
+
+    position: relative; /* ? */
+}
+
+.about_wrapper{
+    position: relative;
+}
+.text{
+    align-self: flex-start;
+}
+.image{
+    align-self: flex-end;
+}
+
+/* Offser box */
+.accent_box{
+    position: absolute;
+    background-color: var(--bright-purple);
+    border-radius: 12px;
+    border: 2px solid var(--deep-purple);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.left{
+    top: 15px; 
+    left: -15px;
+    width: 100%;
+    height: 100%;
+}
+.right{
+    top: 15px; 
+    left: 15px;
+    width: 100%;
+    height: 100%;
 }
 
 .about_text{
-    background-color: var(--bright-purple);
+    background-color: var(--muted-purple);
     border-radius: 12px;
-    align-self: flex-start;
-    width: 50%;
+    border: 2px solid var(--deep-purple);
     max-width: 801px;
     min-width: 200px;
+    height: auto;
     padding: clamp(20px, 5vw, 47px);
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--deep-purple);
+    position: relative;
     box-sizing: border-box; 
+    z-index: 2; 
 }
 
 .about_me_pic{
+    position: relative;
     background-color: var(--bright-purple);
     border-radius: 12px;
-    align-self: flex-end;
-    width: 50%;
+    border: 2px solid var(--deep-purple);
     max-width: 558px;
     min-width: 200px;
+    box-sizing: border-box;
+    z-index: 2;
     height: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--deep-purple);
-    box-sizing: border-box; 
+    
+    
 }
 .about_me_pic img{
     width: 100%;
@@ -242,16 +293,7 @@ p.keywords{
     display: block;
 }
 
-.about_row{
-    min-height: 986px;
-    height: auto;
-    display: flex;
-    padding: 32px;
-    justify-content: center; 
-    flex-wrap: wrap; 
-    gap: 32px; 
-    align-items: center; 
-}
+
 
 .text_row {
     display: flex;
@@ -378,12 +420,30 @@ footer a:hover, footer a:active{
     .project_grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .about_text{
-        width: 100%;
+    .about_row {
+        flex-direction: column;
+        min-height: auto;
+        gap: 64px;
+    }
+    .about h2{
+        margin: 25px 0px;
+    }
+    .about p{
+        margin: 10px 0px;
+    }
+    .text_col2 p{
+        margin: 5px 0px;
     }
 
-    .about_me_pic{
+    .accent_box {
+        position: absolute;
         width: 100%;
+        height: 100%;
+    }
+    .about_text,
+    .about_me_pic {
+        width: 100%;
+        max-width: 100%;
     }
 
     .text_row{
