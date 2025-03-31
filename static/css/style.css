@@ -105,7 +105,7 @@ nav a:hover, nav a:active{
     color: var(--deep-purple);
 }
 
-.intro h1{
+.intro > h1{
     font-size: clamp(48px, 9vw, 140px);
 }
 
@@ -113,7 +113,7 @@ nav a:hover, nav a:active{
 .projects{
     height: auto;
     background-color: var(--cream-white);
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px;
 }
 
 .project_grid{
@@ -159,7 +159,7 @@ nav a:hover, nav a:active{
     object-position: center;
 }
 
-.project_card p{
+.project_card > p{
     margin-bottom: 16px;
 }
 
@@ -201,10 +201,10 @@ p.keywords{
     background-color: var(--cream-white);
      
 }
-.about h2{
+.about > h2{
     margin-bottom: 55px;
 }
-.about p{
+.about > p{
     margin: 25px 0px
 }
 
@@ -213,12 +213,11 @@ p.keywords{
     justify-content: center;
     align-items: center;
     gap: 32px;
-    padding: 32px;
+    padding: 60px 32px;
     min-height: 986px;
     height: auto;
     margin: 0 auto;
-
-    position: relative; /* ? */
+    position: relative;
 }
 
 .about_wrapper{
@@ -231,7 +230,7 @@ p.keywords{
     align-self: flex-end;
 }
 
-/* Offser box */
+/* Offset box */
 .accent_box{
     position: absolute;
     background-color: var(--bright-purple);
@@ -297,7 +296,7 @@ p.keywords{
     gap: 20px;
 }
 
-.text_row p{
+.text_row > p{
     font-size: clamp(14px, 1vw, 16px);
 }
   
@@ -308,8 +307,8 @@ p.keywords{
 }
   
 .text_col2 {
-    flex: 1; /* Expands to fill remaining space */
-    text-align: left; /* Ensures text starts at the same point */
+    flex: 1;
+    text-align: left;
 }
 
 /* Section: ToolKit */
@@ -407,6 +406,7 @@ p.keywords{
 .pa_row > h3 {
     align-self: flex-start;
     margin-bottom: 24px;
+    font-weight: bold;
 }
 
 .pa_imgGrid {
@@ -447,8 +447,8 @@ p.keywords{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
 }
+
 /* Section: Footer */
 footer {
     padding-top: 0%;
