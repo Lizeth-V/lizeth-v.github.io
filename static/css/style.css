@@ -315,7 +315,7 @@ p.keywords{
 .toolkit {
     background-color: var(--cream-white);
     display: flex;
-    flex-direction: column;
+/*     flex-direction: column; */
     align-items: center;
     padding: 42px;
 }
@@ -334,23 +334,65 @@ p.keywords{
     position: relative;
 }
 
+/* Animation */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+/* Carousel */
 .carousel {
     background-color: var(--cream-white);
     border-radius: 12px;
-    border: 2px solid var(--deep-purple);
+    border: 2px solid #0b1956;
     max-width: 1500px;
     min-width: 200px;
     height: auto;
+    margin: auto;
+	overflow: hidden;
     position: relative;
     z-index: 2;
     padding: 60px 42px;
 }
+	
+.carousel::before,
+.carousel::after {
+	background: linear-gradient(to right, rgba(253, 248, 241, 1) 0%, rgba(255,255,255,0) 100%);
+	content: "";
+	height: 302px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.carousel::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.carousel::before {
+	left: 0;
+	top: 0;
+}
+
+.carousel .carousel-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.carousel .logo {
+	height: 100px;
+	width: 300px;
+}
+/*  */
 
 .accent_box {
     position: absolute;
-    background-color: var(--bright-purple);
+    background-color: #dbd6fa;
     border-radius: 12px;
-    border: 2px solid var(--deep-purple);
+    border: 2px solid #0b1956;
     z-index: 1;
     box-sizing: border-box;
 }
