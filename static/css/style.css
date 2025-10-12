@@ -315,7 +315,7 @@ p.keywords{
 .toolkit {
     background-color: var(--cream-white);
     display: flex;
-/*     flex-direction: column; */
+    justify-content: center;
     align-items: center;
     padding: 42px;
 }
@@ -323,6 +323,10 @@ p.keywords{
 .toolkit_row {
     width: 100%;
     max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .toolkit .title {
@@ -332,6 +336,9 @@ p.keywords{
 
 .toolkit_wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Animation */
