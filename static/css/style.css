@@ -72,7 +72,7 @@ nav {
     top: 0;
     overflow: hidden;
     z-index: 1000;
-    padding: 25px 450px;
+    padding: 25px clamp(16px, 30vw, 450px);
     
 }
 .nav_bar{
@@ -86,14 +86,16 @@ nav {
     border-color: var(--secondary-color);
     background-color: var(--muted-purple-75-opacity);
     backdrop-filter: blur(20px);
+    white-space: nowrap;
+    overflow: hidden;
     
 }
 
 
 nav a{
     font-family: 'Inter';
-    font-size: 16px;
-    margin: 15px;
+    font-size: clamp(12px, 1.2vw, 16px);
+    margin: clamp(6px, 1vw, 15px);
 }
 
 nav a:link, nav a:visited{
@@ -634,6 +636,10 @@ footer a:hover, footer a:active{
 
 
 @media (max-width: 768px) {
+    nav {
+        padding: 25px 16px;
+    }
+
     .intro{
         padding: 80px 32px 80px 32px;
     }
