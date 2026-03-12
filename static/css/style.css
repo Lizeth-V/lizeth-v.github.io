@@ -561,13 +561,13 @@ footer h2{
 }
 .resume{
     align-items: flex-end;
-    margin-top: 25px;
+    margin-top: 12px;
 }
 .footer_icons{
     font-size: 40px;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
 }
 .resume_text{
     font-size: 20px;
