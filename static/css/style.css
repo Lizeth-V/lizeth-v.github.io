@@ -48,7 +48,7 @@ h2 {
     color: var(--text-color);
     font-family: 'JustCosmic';
     font-weight: normal;
-    font-size: clamp(30px, 5vw, 42px);
+    font-size: clamp(48px, 5vw, 60px);
 }
 h3 {
     color: var(--text-color);
@@ -272,6 +272,10 @@ p.keywords{
     z-index: 2; 
 }
 
+.about_intro{
+    margin: 75px 0px;
+}
+
 .about_me_pic{
     position: relative;
     background-color: var(--bright-purple);
@@ -302,19 +306,27 @@ p.keywords{
     gap: 20px;
 }
 
-.text_row > p{
-    font-size: clamp(14px, 1vw, 16px);
-}
+
   
 .text_col1 {
     font-weight: bold;
     min-width: 140px; 
     text-align: left;
 }
+
+.text_col1 > p{
+    font-size: clamp(16px, 2vw, 18px);
+    
+}
   
 .text_col2 {
     flex: 1;
     text-align: left;
+}
+
+.text_col2 > p{
+    font-size: clamp(14px, 2vw, 16px);
+    
 }
 
 /* Section: ToolKit */
