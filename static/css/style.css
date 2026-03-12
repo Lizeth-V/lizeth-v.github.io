@@ -168,9 +168,15 @@ nav a:hover, nav a:active{
     position: relative;
     border-style: solid;
     border-width: 2px;
+    border-color: var(--deep-purple-35-opacity);
 }
 
 .project_photo:hover{
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-color: var(--secondary-color);
+}
+
+
 .project_photo img {
     width: 100%;
     height: 100%;
@@ -180,24 +186,6 @@ nav a:hover, nav a:active{
 
 .project_card > p{
     margin-bottom: 16px;
-}
-
-.project_photo .star {
-    position: absolute;
-    font-size: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; 
-    color: var(--deep-purple); 
-}
-
-/* Stars when hovering effect */
-.project_photo .top-left { top: 5px; left: 5px; }
-.project_photo .bottom-right { bottom: 5px; right: 5px; }
-
-.project_card:hover .project_photo .star {
-    opacity: 1;
-    transform: scale(1);
 }
 
 .project_card:hover p{
