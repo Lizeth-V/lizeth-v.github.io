@@ -107,6 +107,120 @@ nav a:hover, nav a:active{
     color: var(--accent-shadow);
 }
 
+/* Aura Effect */
+
+.aura-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+}
+
+.aura-blobs {
+  position: absolute;
+  inset: -20%;
+  filter: blur(72px);
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.blob-1 {
+  width: 65vw; height: 65vw;
+  background: radial-gradient(circle, #b8b0f0 0%, #dbd6fa 45%, transparent 70%);
+  top: -10%; left: -8%;
+  opacity: 0.90;
+  animation: drift-a 15s ease-in-out infinite alternate;
+}
+.blob-2 {
+  width: 50vw; height: 50vw;
+  background: radial-gradient(circle, #7ba4e8 0%, #466ec3 30%, transparent 70%);
+  top: 5%; right: -4%;
+  opacity: 0.28;
+  animation: drift-b 19s ease-in-out infinite alternate;
+}
+.blob-3 {
+  width: 42vw; height: 42vw;
+  background: radial-gradient(circle, #dbd6fa 0%, transparent 68%);
+  top: 30%; left: 25%;
+  opacity: 0.70;
+  animation: drift-c 23s ease-in-out infinite alternate;
+}
+.blob-4 {
+  width: 32vw; height: 32vw;
+  background: radial-gradient(circle, #9b93ee 0%, transparent 68%);
+  top: 2%; right: 20%;
+  opacity: 0.55;
+  animation: drift-d 17s ease-in-out infinite alternate;
+}
+.blob-5 {
+  width: 28vw; height: 28vw;
+  background: radial-gradient(circle, #466ec3 0%, #7ba4e8 40%, transparent 70%);
+  top: 40%; left: 5%;
+  opacity: 0.22;
+  animation: drift-a 21s ease-in-out infinite alternate-reverse;
+}
+.blob-6 {
+  width: 36vw; height: 36vw;
+  background: radial-gradient(circle, #c4bef7 0%, transparent 68%);
+  top: 55%; right: 10%;
+  opacity: 0.60;
+  animation: drift-b 25s ease-in-out infinite alternate-reverse;
+}
+.blob-7 {
+  width: 22vw; height: 22vw;
+  background: radial-gradient(circle, #7ba4e8 0%, #466ec3 35%, transparent 70%);
+  top: 15%; left: 40%;
+  opacity: 0.20;
+  animation: drift-c 20s ease-in-out infinite alternate-reverse;
+}
+.blob-8 {
+  width: 30vw; height: 30vw;
+  background: radial-gradient(circle, #dbd6fa 0%, transparent 68%);
+  top: 60%; left: 45%;
+  opacity: 0.55;
+  animation: drift-d 27s ease-in-out infinite alternate;
+}
+.blob-9 {
+  width: 20vw; height: 20vw;
+  background: radial-gradient(circle, #9b93ee 0%, transparent 68%);
+  top: 20%; right: 5%;
+  opacity: 0.48;
+  animation: drift-a 13s ease-in-out infinite alternate-reverse;
+}
+
+#blob-cursor {
+  width: 36vw; height: 36vw;
+  background: radial-gradient(circle, #c4bef7 0%, #dbd6fa 50%, transparent 70%);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.72;
+  transform: translate(-50%, -50%);
+  left: 50%; top: 40%;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              top  0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+@keyframes drift-a {
+  to { transform: translate(7%, 11%) scale(1.07); }
+}
+@keyframes drift-b {
+  to { transform: translate(-9%, 7%) scale(0.94); }
+}
+@keyframes drift-c {
+  to { transform: translate(-7%, -9%) scale(1.1); }
+}
+@keyframes drift-d {
+  to { transform: translate(5%, 14%) scale(1.06); }
+}
 
 /* Section: Landing Page */
 .landing {
@@ -116,18 +230,15 @@ nav a:hover, nav a:active{
     
 }
 .intro{
+    position: relative;
+    z-index: 1;
     text-align: center;
     padding: 105px 260px;
-}
-.my-name{
-    color: var(--bright-purple);
-}
-.my-title{
-    color: var(--deep-purple);
 }
 
 .intro > h1{
     font-size: clamp(48px, 9vw, 140px);
+    color: var(--deep-purple);
 }
 
 /* Section: Projects */
@@ -317,7 +428,7 @@ p.keywords{
 }
 
 .text_col1 > p{
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(18px, 2vw, 20px);
     
 }
   
