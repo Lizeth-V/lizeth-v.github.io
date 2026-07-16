@@ -81,6 +81,7 @@
     max-height: 100vh;
     background-color: var(--muted-purple);
     border-radius: 12px;
+    text-wrap: pretty;
 }
 
 .description_row{
@@ -102,6 +103,23 @@
 
 .project_description a:hover, .project_description a:active{
     color: var(--secondary-color);
+}
+
+.mh_p{
+    font-size: clamp(16px, 2vw, 20px)
+
+}
+
+
+ul{
+    color: var(--text-color);
+    font-family: 'Inter';
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: lighter;
+}
+
+li{
+    margin-bottom: 8px;
 }
 
 /* Mobile/Tablet Responsive */

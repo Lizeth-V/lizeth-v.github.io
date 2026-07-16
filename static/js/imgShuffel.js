@@ -2,7 +2,9 @@ const imagePaths = [
     'static/assets/Personal Adventures/IMG_01.JPG',
     'static/assets/Personal Adventures/IMG_5222.JPG',
     'static/assets/Personal Adventures/IMG_6280.JPG',
-    'static/assets/Personal Adventures/IMG_8758.JPG'
+    'static/assets/Personal Adventures/IMG_8758.JPG',
+    'static/assets/Personal Adventures/IMG_7580.jpeg',
+    'static/assets/Personal Adventures/IMG_7652.jpeg'
 ];
 
 function shuffleImgArray(array){
