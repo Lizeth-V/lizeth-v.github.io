@@ -251,7 +251,6 @@ nav a:hover, nav a:active{
 .project_grid{
     max-width: 1500px; 
     margin: 0 auto;
-    /*  */
     display: grid;
     column-gap: 25px;
     row-gap: 124px;
@@ -324,7 +323,8 @@ p.keywords{
     margin-bottom: 55px;
 }
 .about > p{
-    margin: 25px 0px
+    margin: 25px 0px;
+    text-wrap: pretty;
 }
 
 .about_row{
@@ -387,6 +387,7 @@ p.keywords{
 
 .about_intro{
     margin: 75px 40px 75px 0px;
+    font-size: clamp(18px, 2vw, 22px)
 }
 
 .about_me_pic{
@@ -438,7 +439,7 @@ p.keywords{
 }
 
 .text_col2 > p{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(18px, 2vw, 20px);
     
 }
 
