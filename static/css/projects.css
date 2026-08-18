@@ -1,3 +1,4 @@
+
 /* Project Title Section */
 .project_landing{
     background-color: var(--cream-white);
@@ -5,10 +6,13 @@
 
 .project_title{
     padding: 150px 32px 90px 32px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.project_title > h3{
+.project_buzz_words{
     color: var(--project-keywords);
+    font-size: clamp(14px, 3vw, 20px);
 }
 /* Project Display */
 .project_display{
@@ -16,7 +20,7 @@
     border-bottom-right-radius: 5vw;
     border-bottom-left-radius: 5vw;
     background-color: var(--cream-white);
-    padding: 30px 32px 200px 32px;
+    padding: 32px 0px 82px
     
 }
 
@@ -73,11 +77,11 @@
 .project_description{
     width: 35%;
     padding: 25px;
-    position: sticky;
     top: 80px;
     max-height: 100vh;
-    background-color: var(--light-purple);
+    background-color: var(--muted-purple);
     border-radius: 12px;
+    text-wrap: pretty;
 }
 
 .description_row{
@@ -99,6 +103,23 @@
 
 .project_description a:hover, .project_description a:active{
     color: var(--secondary-color);
+}
+
+.mh_p{
+    font-size: clamp(16px, 2vw, 20px)
+
+}
+
+
+ul{
+    color: var(--text-color);
+    font-family: 'Inter';
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: lighter;
+}
+
+li{
+    margin-bottom: 8px;
 }
 
 /* Mobile/Tablet Responsive */
@@ -125,4 +146,11 @@
     .project_images {
         width: 100%;
     }
+}
+
+/* Larger PC size adjustment - This is so the pages doesnt seem super zoomed in */
+.page-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 32px;
 }

@@ -24,61 +24,76 @@
     <body>
         <nav>
             <div class="nav_bar">
-                <div class="logo">
-                    <a href="#landing">liz <i class="ph ph-sparkle"></i></a>
-
-                </div>
-                <div class="links">
-                    <a href="#projects">Work</a>
-                    <a href="#about">About</a>
-                </div>
+                <a href="#landing">Home</a>
+                <a href="#projects">Work</a>
+                <a href="#about">About</a>
+                <a href="#toolkit">Skills</a>
+                <a href="#footer_contact">Contact</a>
             </div>
         </nav>
         
         <div class="landing" id="landing">
+            <div class="aura-container">
+                <div class="aura-blobs">
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
+                    <div class="blob blob-3"></div>
+                    <div class="blob blob-4"></div>
+                    <div class="blob blob-5"></div>
+                    <div class="blob blob-6"></div>
+                    <div class="blob blob-7"></div>
+                    <div class="blob blob-8"></div>
+                    <div class="blob blob-9"></div>
+                    <div id="blob-cursor"></div>
+                </div>
+            </div>
             <div class="intro">
-                <h1>Hi. <span class="my-name">I'm Liz.</span> <br /> A <span class="my-title">Developer</span></h1>
-                <h3>With a passion for interactive experiences. I blend design, developement, and technical precision to create immersive digital products.</h3>
+                <h1>Hi. I'm Liz.<br /> A Developer</span></h1>
+                <h3>With a passion for interactive experiences. I blend design, development, and technical precision to create immersive digital products.</h3>
             </div>
         </div>
 
         <div class="projects" id="projects">
             <div class="project_grid">
-                <a href="hangogo.html">
+                <a href="projects/marinahacks.html">
+                    <div class="project_card">
+                        <div class="project_photo">
+                            <!-- Image Here -->
+                            <img src="static/assets/MarinaHacks/MarinaHacks_coverPage.png" alt="MarinaHacks">
+                        </div>
+                        <p>MarinaHacks</p>
+                        <p class="keywords">Web Design, Figma Prototyping, Team Leadership</p>
+                    </div>
+                </a> 
+                <a href="projects/hangogo.html">
                     <div class="project_card">
                         <div class="project_photo">
                             <img src="static/assets/Hangogo/hangogo_card.png" alt="Hangogo">
-                            <i class="ph ph-star-four star top-left" style="font-size: 40px;"></i>
-                            <i class="ph ph-star-four star bottom-right" style="font-size: 40px;"></i>
                         </div>
                         <p>Hangogo</p>
                         <p class="keywords">System, Web Development, UI/UX</p>
                     </div>
                 </a>
-                <a href="attackOfTheAlilackies.html">
+                <a href="projects/attackOfTheAlilackies.html">
                     <div class="project_card">
                         <div class="project_photo">
                             <!-- Image Here -->
                             <img src="static/assets/Attack of the Alilackies!/AotA_Card.png" alt="Ribbit_Runners">
-                            <i class="ph ph-star-four star top-left" style="font-size: 40px;"></i>
-                            <i class="ph ph-star-four star bottom-right" style="font-size: 40px;"></i>
                         </div>
                         <p>Attack of the Alilackies!</p>
                         <p class="keywords">Research, Game Development, Prototype</p>
                     </div>
                 </a>
-                <a href="ribbitRunners.html">
+                <a href="projects/ribbitRunners.html">
                     <div class="project_card">
                         <div class="project_photo">
                             <!-- Image Here -->
                             <img src="static/assets/Ribbet Runners/Ribbet_Runners_card.png" alt="Ribbit_Runners">
-                            <i class="ph ph-star-four star top-left" style="font-size: 40px;"></i>
-                            <i class="ph ph-star-four star bottom-right" style="font-size: 40px;"></i>
                         </div>
                         <p>Ribbit Runners</p>
                         <p class="keywords">Research, Game Development, Prototype</p>
                     </div>
-                </a>  
+                </a> 
             </div>
         </div>
 
@@ -86,9 +101,11 @@
             <div class="about_row">
                 <div class="about_wrapper text">
                     <div class="accent_box left"></div>
+                    <img src = "static\assets\about_me_stars.svg" class = "star-cluster about-me-stars">
                     <div class="about_text">
                         <h2>About Me</h2>
-                        <p> I'm Lizeth--a software developer with a passion for game and web development. I thrive on building interactive experiences that engage and inspire. With a well-rounded skill set, I enjoy bringing ideas to life through programming, blending creativity with technical precision to craft immersive digital worlds.</p>
+                        
+                        <p class="about_intro">Hi, I'm Liz — a developer driven by curiosity and attention to detail. I love the moment an idea stops being a sketch and comes to life, whether that means designing something beautiful or building it through a late night coding session. Every detail and design choice matters to me, and I genuinely enjoy the critical thinking and problem-solving that comes with the craft. My passion sits right where creativity and code meet: building interactive experiences across games and websites, with a particular interest in UI/UX and web development. </p>
     
                         <div class="text_row">
                             <div class="text_col1">
@@ -113,7 +130,7 @@
                                 <p><b>Involvements:</b></p>
                             </div>
                             <div class="text_col2">
-                                <p>Flourish Productions - <i>Game Programmer</i>
+                                <p>CodeREV - <i>STEM Instructor <br/></i>Flourish Productions - <i>Game Programmer</i>
                                 <br/> MarinaHacks - <i>Design Commitee Co-Lead</i>
                                 <br/> Girls Make Games - <i>Counselor, Mentor</i></p>
                             </div>
@@ -144,45 +161,33 @@
                 <div class="accent_box bottom"></div>
                 <div class="toolkit carousel">
                   <div class="toolkit carousel-track">
-                    <div class="logo">
-                      <img src="static/assets/logos/cplusplus.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/csharp.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/css.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/html.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/git.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/github.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/javascript.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="static/assets/logos/java.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                        <img src="static/assets/logos/python.svg" height="100"   alt="" />
-                      </div>
-                    <div class="logo">
-                        <img src="static/assets/logos/godot.svg" height="100"   alt="" />
-                    </div>
-                    <div class="logo">
-                        <img src="static/assets/logos/unity.svg" height="100"   alt="" />
-                      </div>
-                    <div class="logo">
-                        <img src="static/assets/logos/mongodb.svg" height="100"   alt="" />
-                      </div>
-                    <div class="logo">
-                        <img src="static/assets/logos/vscode.svg" height="100"   alt="" />
-                      </div>
+                    <div class="logo">C++</div>
+                    <div class="logo">C#</div>
+                    <div class="logo">CSS</div>
+                    <div class="logo">HTML</div>
+                    <div class="logo">Git</div>
+                    <div class="logo">GitHub</div>
+                    <div class="logo">JavaScript</div>
+                    <div class="logo">Java</div>
+                    <div class="logo">Python</div>
+                    <div class="logo">Godot</div>
+                    <div class="logo">Unity</div>
+                    <div class="logo">MongoDB</div>
+                    <div class="logo">VS Code</div>
+                    <!-- duplicates for seamless loop -->
+                    <div class="logo">C++</div>
+                    <div class="logo">C#</div>
+                    <div class="logo">CSS</div>
+                    <div class="logo">HTML</div>
+                    <div class="logo">Git</div>
+                    <div class="logo">GitHub</div>
+                    <div class="logo">JavaScript</div>
+                    <div class="logo">Java</div>
+                    <div class="logo">Python</div>
+                    <div class="logo">Godot</div>
+                    <div class="logo">Unity</div>
+                    <div class="logo">MongoDB</div>
+                    <div class="logo">VS Code</div>
                   </div>
                 </div>
               </div>
@@ -191,7 +196,7 @@
 
         <div class="personal_adventures" id="personal_adventures">
             <div class="pa_row">
-                <h3>Personal Adventures</h3>
+                <h3 class="title"> Personal Adventures</h3>
                 <div class="pa_imgGrid">
                     <div class="pa_images" id="paImages"> 
                         <script src="static/js/imgShuffel.js"></script>
@@ -213,7 +218,7 @@
         </div>
 
         <footer> 
-            <div class="footer_row">
+            <div class="footer_row" id="footer_contact">
                 <div class="contact_me">
                     <h2>Contact Me</h2>
                     <a href="mailto:lizethevald@gmail.com?subject=Let's%20Talk!%20-%20Inquiry%20from%20Your%20Website">
@@ -225,7 +230,7 @@
                     <a href="static/assets/Resume - Lizeth Valdovinos Rod.pdf" target="_blank" rel="noopener" class="resume_text">Get my Resume!</a>
                     <div class="footer_icons">
                         <div>
-                            <a href="https://www.linkedin.com/in/lizeth-valdovinos-rodriguez/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="https://www.linkedin.com/in/lizethevald/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
                         </div>
                         <div>
                             <a href="https://github.com/Lizeth-V" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
@@ -237,7 +242,7 @@
                     
                 </div>
                 <div class="copyright">
-                    <p><i class="ph ph-copyright"></i> 2025 Lizeth Valdovinos Rodriguez</p>
+                    <p><i class="ph ph-copyright"></i> 2026 Lizeth Valdovinos Rodriguez</p>
                     <p>Designed by <a href="https://ameliesuarez.com/" target="_blank" rel="noopener">Amelie Suarez</a></p>
                 </div>
 
